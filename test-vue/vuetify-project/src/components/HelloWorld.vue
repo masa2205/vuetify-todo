@@ -5,6 +5,11 @@
         <v-toolbar-title>ToDo List</v-toolbar-title>
       </v-app-bar>
       <v-text-field label="入力欄" placeholder="ToDoの入力" outlined></v-text-field>
+      <v-checkbox 
+        v-model="showMessage"
+        :label="`showMessage is ${showMessage}`" 
+        color="success">
+      </v-checkbox>
       <v-date-picker
       v-model="picker"
       reactive
