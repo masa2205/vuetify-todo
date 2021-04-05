@@ -5,6 +5,12 @@
         <v-toolbar-title>ToDo List</v-toolbar-title>
       </v-app-bar>
       <v-text-field label="入力欄" placeholder="ToDoの入力" outlined></v-text-field>
+      <v-date-picker
+      v-model="picker"
+      reactive
+      locale="jp-ja"
+      :day-format="date => new Date(date).getDate()"
+    ></v-date-picker>
       <v-btn color="primary" dark >追加</v-btn>
       <v-footer color="info" dark app>Vuetify</v-footer>
     </v-container>  
