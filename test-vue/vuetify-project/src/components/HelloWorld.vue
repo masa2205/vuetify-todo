@@ -16,7 +16,7 @@
       locale="jp-ja"
       :day-format="date => new Date(date).getDate()"
     ></v-date-picker>
-      <v-btn color="primary" dark >追加</v-btn>
+      <v-btn color="primary" dark >!追加</v-btn>
       <v-footer color="info" dark app>Vuetify</v-footer>
     </v-container>  
   </v-app>
@@ -25,3 +25,7 @@
 <script>
   
 </script>
+
+
+
+
